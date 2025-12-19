@@ -1,5 +1,19 @@
 def permutation_to_factoradic(permutation):
-    tree = [] #TODO: replace with binary tree
+    """
+    >>> permutation_to_factoradic((0,1,2))
+    [0, 0, 0]
+    >>> permutation_to_factoradic((0,2,1))
+    [0, 1, 0]
+    >>> permutation_to_factoradic((1,0,2))
+    [1, 0, 0]
+    >>> permutation_to_factoradic((1,2,0))
+    [1, 1, 0]
+    >>> permutation_to_factoradic((2,0,1))
+    [2, 0, 0]
+    >>> permutation_to_factoradic((2,1,0))
+    [2, 1, 0]
+    """
+    tree = []  # TODO: replace with binary tree
     factoradic = []
     for e in reversed(permutation):
         num_less_than = 0
